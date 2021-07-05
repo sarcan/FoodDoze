@@ -1,0 +1,12 @@
+.desktop-gallery  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px;
+    width: 100vw;
+    overflow: hidden;
+
+    .image img {
+        height: calc(100vw/2);
+    }
+}

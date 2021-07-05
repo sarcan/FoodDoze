@@ -1,0 +1,1468 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'mr-eaves-modern', sans-serif;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.text {
+  margin: 3rem auto 3rem auto;
+  padding: 0 2rem 0 2rem;
+  max-width: 85rem;
+  text-align: center;
+  color: #707070;
+}
+
+.text h1 {
+  font-family: 'Looking Flowers', sans-serif;
+  font-size: 4rem;
+}
+
+.text h2 {
+  font-family: 'Looking Flowers', sans-serif;
+  font-size: 4rem;
+}
+
+.text .flower-font {
+  font-family: 'Looking Flowers', sans-serif;
+  font-size: 2.5rem;
+}
+
+.text .flower-font a {
+  text-decoration: none;
+  color: #E63946;
+}
+
+.text p {
+  font-size: 1.25rem;
+}
+
+footer {
+  width: 100vw;
+  height: 12rem;
+  background: #1D3557;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer .icons {
+  padding-bottom: 1rem;
+}
+
+footer .icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 1rem 0 1rem;
+}
+
+footer .icons .fa-facebook-f:hover {
+  color: #4267B2;
+}
+
+footer .icons .fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+footer .icons .fa-instagram:hover {
+  color: #d6249f;
+}
+
+footer .icons .fa-google:hover {
+  color: #DB4437;
+}
+
+footer .copyright {
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+
+.formular {
+  background: #77ABBD;
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formular p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.formular form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+.formular form input {
+  width: 35rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  text-align: center;
+}
+
+.formular form input::-webkit-input-placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.formular form input:-ms-input-placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.formular form input::-ms-input-placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.formular form input::placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.formular form button {
+  width: 15rem;
+  height: 3rem;
+  border: none;
+  font-size: 1rem;
+  color: #1D3557;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 53rem) {
+  .formular form input {
+    width: 20rem;
+  }
+  .formular form button {
+    width: 10rem;
+  }
+}
+
+.admin-nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5rem;
+}
+
+.admin-nav-logo img {
+  height: 15rem;
+}
+
+.login {
+  margin: 0 0 3rem 0;
+  background: white !important;
+}
+
+.login form {
+  height: auto;
+}
+
+.login form input {
+  border: 1px solid #1D3557 !important;
+}
+
+.login form input:last-of-type {
+  margin-top: 1.5rem;
+}
+
+.login form p {
+  color: #1D3557;
+  font-size: 1.25rem;
+}
+
+.login form p a {
+  text-decoration: none;
+  color: #77ABBD;
+}
+
+.login form button {
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 45rem) {
+  .admin-nav-logo img {
+    height: 10rem;
+  }
+}
+
+.allekategorien {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 85rem;
+}
+
+.allekategorien .kategorie {
+  padding: 2rem 2rem 0 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.allekategorien .kategorie img {
+  height: 6rem;
+  width: auto;
+}
+
+.allekategorien .kategorie p {
+  padding-top: 1rem;
+  list-style: none;
+  color: #707070;
+}
+
+@media only screen and (max-width: 53rem) {
+  .allekategorien .kategorie img {
+    height: 4rem;
+    width: auto;
+  }
+}
+
+.kacheln .allekategorien .kategorie img {
+  height: 4rem;
+  width: auto;
+}
+
+/* Navigation */
+nav {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .main-nav-logo {
+  margin: 2rem 0 1.5rem 0;
+}
+
+nav .main-nav-logo img {
+  height: 10rem;
+  width: auto;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #1D3557;
+  font-size: 1.5rem;
+}
+
+nav .nav-link.active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #E63946;
+          text-decoration-color: #E63946;
+  text-decoration-thickness: 0.15rem;
+}
+
+nav .main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+nav .burger-nav {
+  position: relative;
+  right: 0;
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+  display: none;
+}
+
+nav .burger-nav .burger-nav-logo {
+  padding: 1rem 0 0 1rem;
+}
+
+nav .burger-nav .burger-nav-links {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .burger-nav .burger-nav-links .icon, nav .burger-nav .burger-nav-links ul li a {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav .burger-nav .burger-nav-links .icon {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  color: #1D3557;
+}
+
+nav .burger-nav .burger-nav-links ul {
+  position: absolute;
+  top: 100%;
+  width: 80vw;
+  height: 100vh;
+  background-color: white;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+nav .burger-nav .burger-nav-links ul :first-of-type {
+  padding-top: 2rem;
+}
+
+nav .burger-nav .burger-nav-links ul li {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+nav .burger-nav .burger-nav-links ul.active {
+  display: block;
+}
+
+@media only screen and (max-width: 53rem) {
+  nav .burger-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .burger-nav .burger-nav-logo img {
+    height: 8rem;
+  }
+  nav .main-nav-logo, nav .main-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  nav .burger-nav .burger-nav-logo img {
+    height: 6rem;
+  }
+}
+
+/* Navigation Adminbereich */
+.admin_navigation {
+  width: 25rem;
+  min-height: 100vh;
+  background: #F1FAEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin_navigation .admin-nav-logo {
+  padding-top: 4rem;
+}
+
+.admin_navigation .admin-nav-logo img {
+  height: 9.5rem;
+}
+
+.admin_navigation .nav-link.active {
+  color: #E63946;
+}
+
+.admin_navigation .admin-main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4rem;
+}
+
+.admin_navigation .admin-main-nav li {
+  padding-top: 4rem;
+}
+
+.admin_navigation .admin-main-nav li a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Ubuntu', 'mr-eaves-modern', sans-serif;
+  color: #1D3557;
+  text-decoration: none;
+}
+
+.admin-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.admin-content-wrapper .admin-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  padding-left: 5rem;
+  margin-bottom: 3rem;
+}
+
+.admin-content-wrapper .admin-content h1 {
+  font-size: 2rem;
+  margin: 10rem 0 2rem 0;
+}
+
+.admin-content-wrapper .admin-content h2 {
+  font-size: 2rem;
+  margin: 4rem 0 3rem;
+}
+
+.admin-content-wrapper .admin-content .successmessage {
+  margin-bottom: 1rem;
+  color: #52796f;
+  font-size: 1.25rem;
+}
+
+.admin-content-wrapper .admin-content .grid {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin-content-wrapper .admin-content .grid .tile {
+  background-color: #deebdd;
+  background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
+  -webkit-box-shadow: 8px 11px 51px -21px rgba(0, 0, 0, 0.6);
+          box-shadow: 8px 11px 51px -21px rgba(0, 0, 0, 0.6);
+  height: 8rem;
+  width: 11rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem 1rem 0;
+}
+
+.admin-content-wrapper .admin-content .grid .tile i {
+  font-size: 2rem;
+  padding-bottom: .5rem;
+}
+
+.admin-content-wrapper .admin-content .grid .tile:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.admin-content-wrapper .admin-content .dashboard-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile {
+  height: 12rem;
+  width: 20rem;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile i {
+  color: #1D3557;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile .information p {
+  font-size: 1.25rem;
+  color: #1D3557;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile .information form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: auto;
+  margin-top: .5rem;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile .information form .delete i, .admin-content-wrapper .admin-content .benutzer-grid .tile .information form .bearbeiten i {
+  font-size: 1.25rem;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile .information form .delete {
+  width: 0;
+  height: 0;
+  margin-right: 2rem;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid .tile .information form button {
+  background: none;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid form {
+  width: 18rem;
+}
+
+.admin-content-wrapper .admin-content .benutzer-grid form input {
+  width: 18rem;
+}
+
+.admin-content-wrapper .admin-content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30rem;
+}
+
+.admin-content-wrapper .admin-content form input {
+  width: 25rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #1D3557;
+}
+
+.admin-content-wrapper .admin-content form input::-webkit-input-placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+}
+
+.admin-content-wrapper .admin-content form input:-ms-input-placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+}
+
+.admin-content-wrapper .admin-content form input::-ms-input-placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+}
+
+.admin-content-wrapper .admin-content form input::placeholder {
+  color: #1D3557;
+  font-size: 1rem;
+}
+
+.admin-content-wrapper .admin-content form button {
+  width: 15rem;
+  height: 3rem;
+  border: none;
+  font-size: 1rem;
+  color: #1D3557;
+  cursor: pointer;
+}
+
+.admin-content-wrapper .admin-content .neu {
+  padding: .5rem;
+}
+
+.admin-content-wrapper .admin-content .allerezepte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30rem;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept {
+  padding: 2rem 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  border-bottom: 2px solid #77ABBD;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept p {
+  font-size: 1.25rem;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept .icons i {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #1D3557;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept .icons form {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept .icons form button {
+  background: white;
+  height: auto;
+  width: auto;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .rezept:last-child {
+  border-bottom: none;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .neu {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem .5rem 1rem .5rem;
+  margin-top: 1rem;
+  background: #77ABBD;
+}
+
+.admin-content-wrapper .admin-content .allerezepte .neu a {
+  text-decoration: none;
+  color: white;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .error {
+  width: 30rem;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .input-field input {
+  width: 30rem;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .input-field label {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .input-field label .required {
+  color: #E63946;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .buttons button {
+  width: 7rem;
+  margin-left: 1rem;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .buttons .cancel {
+  background: white;
+  border: #E63946 2px solid;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .buttons .cancel a {
+  text-decoration: none;
+  color: #E63946;
+}
+
+.admin-content-wrapper .admin-content .erstellen-form .buttons .save {
+  background: white;
+  border: #1D3557 2px solid;
+}
+
+@media only screen and (max-width: 53rem) {
+  .admin-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .admin-content-wrapper h1 {
+    margin-top: 3rem;
+  }
+  .admin-content-wrapper .admin_navigation {
+    width: 100vw;
+  }
+  .admin-content-wrapper .admin_navigation nav {
+    height: 52rem;
+    width: 100vw;
+  }
+  .admin-content-wrapper .admin-content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .admin-content-wrapper .admin-content .dashboard-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+  }
+  .admin-content-wrapper .admin-content .dashboard-grid .tile {
+    margin: 0 0 0 0 !important;
+  }
+  .admin-content-wrapper .admin-content .benutzer-grid {
+    gap: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .admin-content-wrapper .admin-content .benutzer-grid .tile {
+    margin: 0 0 0 0 !important;
+  }
+  .admin-content-wrapper .admin-content form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .admin-content-wrapper .admin-content .erstellen-form .error {
+    width: 12rem;
+  }
+  .admin-content-wrapper .admin-content .erstellen-form input {
+    width: 12rem;
+  }
+  .admin-content-wrapper .admin-content .erstellen-form .description, .admin-content-wrapper .admin-content .erstellen-form .ingredients {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  .admin-content-wrapper .admin-content h1 {
+    margin-top: 3rem;
+  }
+  .admin-content-wrapper .admin-content .benutzer-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .admin-content-wrapper .admin-content .benutzer-grid .tile {
+    height: 10rem;
+    width: 15rem;
+  }
+  .admin-content-wrapper .admin-content .dashboard-grid {
+    width: 60vw;
+  }
+  .admin-content-wrapper .admin-content .dashboard-grid .tile {
+    height: 6rem;
+    width: 9rem;
+  }
+  .admin-content-wrapper .admin-content .neu {
+    padding: .5rem;
+  }
+  .admin-content-wrapper .admin-content form {
+    width: 19rem;
+  }
+  .admin-content-wrapper .admin-content form input {
+    width: 19rem;
+  }
+  .admin-content-wrapper .admin-content .allerezepte {
+    width: 20rem;
+  }
+  .admin-content-wrapper .admin-content .allerezepte .rezept {
+    text-align: center;
+  }
+  .admin-content-wrapper .admin-content .erstellen-form .error {
+    width: 18rem;
+  }
+  .admin-content-wrapper .admin-content .erstellen-form .input-field input {
+    width: 18rem;
+  }
+  .admin-content-wrapper .admin-content .erstellen-form .description, .admin-content-wrapper .admin-content .erstellen-form .ingredients {
+    width: 18rem;
+  }
+}
+
+.desktop-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.desktop-gallery .image img {
+  height: calc(100vw/2);
+}
+
+.kacheln {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kacheln .allerezepte {
+  padding: 2rem 0 5rem 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.kacheln .allerezepte .rezept {
+  height: 16rem;
+  width: 16rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 8px 11px 51px -21px rgba(0, 0, 0, 0.6);
+          box-shadow: 8px 11px 51px -21px rgba(0, 0, 0, 0.6);
+}
+
+.kacheln .allerezepte .rezept img {
+  height: 16rem;
+  width: 16rem;
+}
+
+.kacheln .allerezepte .rezept i {
+  color: #E63946;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.kacheln .allerezepte .rezept .image-title {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 90%;
+  padding: 10% 0 10% 10%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.kacheln .allerezepte .rezept:hover .image-title {
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, right top, from(#d3cce3), to(#e9e4f0));
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  color: black;
+}
+
+.kacheln .error-message-recipe {
+  font-size: 1.25rem;
+  color: #1D3557;
+  border: #E63946 1px solid;
+  padding: 1rem;
+}
+
+/* Einzelnes Rezept */
+.einzelnes_rezept {
+  padding: 10rem 0 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.einzelnes_rezept .img_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+}
+
+.einzelnes_rezept .img_title img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.einzelnes_rezept .img_title .info {
+  margin-left: 4rem;
+}
+
+.einzelnes_rezept .img_title .info h1 {
+  font-size: 3rem;
+  font-family: 'Looking Flowers', sans-serif;
+  color: #1D3557;
+}
+
+.einzelnes_rezept .img_title .info h2 {
+  font-size: 2.5rem;
+  font-family: 'Looking Flowers', sans-serif;
+  color: #1D3557;
+}
+
+.einzelnes_rezept .img_title .info p {
+  font-size: 1.15rem;
+}
+
+.einzelnes_rezept .img_title .info ul {
+  font-size: 1.15rem;
+}
+
+.einzelnes_rezept .img_title .info .ingredients, .einzelnes_rezept .img_title .info .description {
+  margin-top: 1rem;
+}
+
+.einzelnes_rezept .img_title .info .description li {
+  list-style-type: decimal !important;
+}
+
+.einzelnes_rezept .img_title .info .description ol li {
+  font-size: 1.15rem;
+}
+
+@media only screen and (max-width: 53rem) {
+  .einzelnes_rezept .img_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .einzelnes_rezept .img_title .info {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  .einzelnes_rezept {
+    padding-top: 3rem;
+  }
+  .einzelnes_rezept .img_title img {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.person p {
+  max-width: 35rem;
+  padding-left: 8rem;
+}
+
+.person img {
+  height: 20rem;
+  width: auto;
+}
+
+#mitteilung {
+  height: 65rem;
+}
+
+#mitteilung .error-message {
+  color: #E63946;
+}
+
+#mitteilung .send-message {
+  color: #1D3557;
+}
+
+#mitteilung h2 {
+  font-size: 3rem;
+  font-family: 'Looking Flowers', sans-serif;
+  color: white;
+}
+
+#mitteilung form input, #mitteilung form textarea {
+  width: 35rem;
+  border: none;
+  background: transparent;
+  font-family: 'mr-eaves-modern', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  outline: none;
+  border-bottom: white 1px solid;
+}
+
+#mitteilung form input::-webkit-input-placeholder, #mitteilung form textarea::-webkit-input-placeholder {
+  color: white;
+  font-size: 1.25rem;
+}
+
+#mitteilung form input:-ms-input-placeholder, #mitteilung form textarea:-ms-input-placeholder {
+  color: white;
+  font-size: 1.25rem;
+}
+
+#mitteilung form input::-ms-input-placeholder, #mitteilung form textarea::-ms-input-placeholder {
+  color: white;
+  font-size: 1.25rem;
+}
+
+#mitteilung form input::placeholder, #mitteilung form textarea::placeholder {
+  color: white;
+  font-size: 1.25rem;
+}
+
+#mitteilung form .anreden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+#mitteilung form .anreden .anrede-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding-right: 1rem;
+  color: white;
+  font-size: 1.25rem;
+}
+
+#mitteilung form .anreden .anrede-container input {
+  cursor: pointer;
+  height: 1rem;
+  width: auto;
+}
+
+#mitteilung form .anreden .anrede-container:last-of-type {
+  padding-right: 0;
+}
+
+#mitteilung form .dropdown {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#mitteilung form #dropdown {
+  width: 17rem;
+  height: 3rem;
+  background: transparent;
+  border: white 1px solid;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem 0 1rem;
+}
+
+#mitteilung form #dropdown option {
+  padding: 0 0 0 0 !important;
+}
+
+#mitteilung form textarea {
+  border: 1px solid white;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 1rem 0 1rem;
+}
+
+#mitteilung form .checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  color: white;
+}
+
+#mitteilung form .checkbox-container #checkbox {
+  height: 1.5em;
+  width: 1.5rem;
+  margin: 0;
+}
+
+#mitteilung form .checkbox-container #agree {
+  margin: 0;
+}
+
+#mitteilung form .checkbox-container label {
+  margin-left: 1rem;
+}
+
+#mitteilung form span {
+  color: #E63946;
+  padding: 1rem 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+#mitteilung form span:last-of-type {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 53rem) {
+  .person {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .person p {
+    padding: 2rem 0 0 0;
+    max-width: 85rem;
+  }
+  #mitteilung {
+    height: 70rem;
+  }
+  #mitteilung form .checkbox-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #mitteilung form .checkbox-container #agree {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  #mitteilung form input, #mitteilung form textarea {
+    width: 18rem;
+  }
+  #mitteilung form .anreden .anrede-container input {
+    height: 1.15rem;
+    width: 1.15rem;
+  }
+  #mitteilung form .checkbox-container #agree {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

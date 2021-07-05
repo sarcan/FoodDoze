@@ -1,0 +1,41 @@
+.allekategorien {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 85rem;
+
+    .kategorie {
+        padding: 2rem 2rem 0 2rem;
+        cursor: pointer;
+        text-decoration: none;
+
+        img {
+            height: 6rem;
+            width: auto;
+        }
+
+        p {
+            padding-top: 1rem;
+            list-style: none;
+            color: $text_color;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-tablets) {
+        .kategorie {
+            img {
+                height: 4rem;
+                width: auto;
+            }
+        }
+    }
+}
+
+.kacheln .allekategorien {
+    .kategorie {
+        img {
+            height: 4rem;
+            width: auto;
+        }
+    }
+}

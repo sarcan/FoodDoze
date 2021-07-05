@@ -1,0 +1,444 @@
+.admin-content-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+
+    .admin-content {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+        padding-left: 5rem;
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 2rem;
+            margin: 10rem 0 2rem 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 4rem 0 3rem;
+        }
+
+        .successmessage {
+            margin-bottom: 1rem;
+            color: #52796f;
+            font-size: 1.25rem;
+        }
+
+        // Grid Übersicht
+        .grid {
+            min-height: 20vh; 
+            display: flex;
+            flex-wrap: wrap;
+
+            .tile {
+                background-color: #deebdd;
+                background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
+                box-shadow: 8px 11px 51px -21px rgba(0,0,0,0.6);
+                height: 8rem;
+                width: 11rem;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+                cursor: pointer;
+                transition: all .2s ease-in-out; 
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: white;
+                margin: 0 1rem 1rem 0;
+
+                i {
+                    font-size: 2rem;
+                    padding-bottom: .5rem;
+                }
+            }
+
+            .tile:hover {
+                transform: scale(1.1); 
+            }
+        }
+
+        // Grid Dashboard
+        .dashboard-grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        // Benutzer
+        .benutzer-grid {
+            display: flex;
+            flex-wrap: wrap;
+
+            .tile {
+                height: 12rem;
+                width: 20rem;
+
+                i {
+                    color: $dark_blue;
+                }
+                                
+                .information {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    position: relative;
+                
+                    p {
+                        font-size: 1.25rem;
+                        color: $dark_blue;
+                    }
+                
+                    form {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: baseline;
+                        width: auto;
+                        margin-top: .5rem;
+
+                        .delete, .bearbeiten {
+                            i {
+                                font-size: 1.25rem;
+                            }
+                        }
+                        
+                        .delete {
+                            width: 0;
+                            height: 0;
+                            margin-right: 2rem;
+                        }
+
+                        button {
+                            background: none;
+                        }
+                    }
+                }
+            }
+
+            form {
+                width: 18rem;
+    
+                input {
+                    width: 18rem;
+                }
+            }
+        }
+
+        // Formular
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 30rem;
+
+            input {
+                width: 25rem;
+                height: 3rem;
+                margin-bottom: 1.5rem;
+                border: none;
+                border-bottom: 1px solid $dark_blue;
+            }
+            
+            input::placeholder {
+                color: $dark_blue;
+                font-size: 1rem;
+            }
+            
+            button {
+                width: 15rem;
+                height: 3rem;
+                border: none;
+                font-size: 1rem;
+                color: $dark_blue;
+                cursor: pointer;
+            }
+        }
+
+        // Rezepte
+        .neu {
+            padding: .5rem;
+        }
+
+        // Alle Rezepte
+        .allerezepte {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 30rem;
+            
+            .rezept {
+                padding: 2rem 0 2rem 0;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                width: 100%;
+                height: 5rem;
+                border-bottom: 2px solid $light_blue;
+            
+                p {
+                    font-size: 1.25rem;
+                }
+            
+                img {
+                    height: 6rem;
+                    width: 6rem;
+                }
+            
+                .icons {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                                
+                    i {
+                        font-size: 1.25rem;
+                        cursor: pointer;
+                        color: $dark_blue;
+                    }
+            
+                    form {
+                        padding: 0;
+                        margin: 0;
+                        height: auto;
+                        width: auto;
+            
+                        button {
+                            background: white;
+                            height: auto;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            
+            .rezept:last-child {
+                border-bottom: none;
+            }
+            
+            // Link neues Rezept
+            .neu {
+                font-weight: bold;
+                font-size: 1.5rem;
+                padding: 1rem .5rem 1rem .5rem;
+                margin-top: 1rem;
+                background: $light_blue;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        // Erstellen
+        .erstellen-form {
+            display: flex;
+            align-items: center;
+            
+            .error {
+                width: 30rem;
+            }
+            
+            .input-field {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            
+                input {
+                    width: 30rem;
+                }
+                            
+            
+                label {
+                    font-size: 1.15rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                                
+                    .required {
+                        color: $red;
+                    }
+                }
+            }
+            
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 3rem;
+            
+                button {
+                    width: 7rem;
+                    margin-left: 1rem;
+                }
+            
+                .cancel {
+                    background: white;
+                    border: $red 2px solid;
+
+                    a {
+                        text-decoration: none;
+                        color: $red;
+            
+                    }
+                }
+            
+                .save {
+                    background: white;
+                    border: $dark_blue 2px solid;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablets) {
+    .admin-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        h1 {
+            margin-top: 3rem;
+        }
+
+        .admin_navigation {
+            width: 100vw;
+
+            nav {
+                height: 52rem;
+                width: 100vw;
+            }
+        } 
+
+        .admin-content {
+            padding: 0;
+            display: flex;
+            align-items: center;
+
+            // Dasboard Grid
+            .dashboard-grid {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+                .tile {
+                    margin: 0 0 0 0 !important;
+                }
+            }
+
+            // Benutzer Grid
+            .benutzer-grid {
+                gap: 1.25rem;
+                display: flex;
+                justify-content: center;
+
+                .tile {
+                    margin: 0 0 0 0 !important;
+                }
+            }
+
+            // Form
+            form {
+                display: flex;
+                align-items: center;
+            }
+
+            // Neues Rezept
+            .erstellen-form {
+                .error {
+                    width: 12rem;
+                }
+
+                input {
+                    width: 12rem;
+                }
+
+                .description, .ingredients {
+                    width: 30rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .admin-content-wrapper {
+        .admin-content {
+
+            h1 {
+                margin-top: 3rem;
+            }
+
+            // Benutzer
+            .benutzer-grid {
+                display: flex;
+                flex-direction: column;
+
+                .tile {
+                    height: 10rem;
+                    width: 15rem;
+                }
+            }
+    
+            // Dashboard
+            .dashboard-grid {
+                width: 60vw;
+
+                .tile {
+                    height: 6rem;
+                    width: 9rem;  
+                }
+            }
+            
+            // Rezepte
+            .neu {
+                padding: .5rem;
+            }
+
+            form {
+                width: 19rem;
+
+                input {
+                    width: 19rem;
+                }
+            }
+
+            // Alle Rezepte
+            .allerezepte {
+                width: 20rem;
+
+                .rezept {
+                    text-align: center;
+                }
+            }
+
+            // Neues Rezept
+            .erstellen-form {
+                .error {
+                    width: 18rem;
+                }
+
+                .input-field {
+                    input {
+                        width: 18rem;
+                    }
+                }
+
+                .description, .ingredients {
+                    width: 18rem;
+                }
+            }
+        }
+        
+    }
+}

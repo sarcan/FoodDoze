@@ -1,0 +1,105 @@
+.formular {
+    background: $light_blue;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+
+        input {
+            width: 35rem;
+            height: 3rem;
+            margin-bottom: 1.5rem;
+            border: none;
+            text-align: center;
+        }
+
+        input::placeholder {
+            color: $dark_blue;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        button {
+            width: 15rem;
+            height: 3rem;
+            border: none;
+            font-size: 1rem;
+            color: $dark_blue;
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-tablets) {
+        form {
+            input {
+                width: 20rem;
+            }
+            
+            button {
+                width: 10rem;
+            }
+        }
+    }
+}
+
+.admin-nav-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+
+    img {
+        height: 15rem;
+    }
+}
+
+.login {
+    margin: 0 0 3rem 0;
+    background: white !important;
+
+    form {
+        height: auto;
+        
+        input {
+            border: 1px solid $dark_blue !important;
+        }
+
+        input:last-of-type {
+            margin-top: 1.5rem;
+        }
+
+        p {
+            color: $dark_blue;
+            font-size: 1.25rem;
+
+            a {
+                text-decoration: none;
+                color: $light_blue;
+            }
+        }
+
+        button {
+            margin-top: 1.5rem;
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .admin-nav-logo {
+        img {
+            height: 10rem;
+        }
+    }
+}

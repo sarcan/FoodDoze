@@ -1,0 +1,203 @@
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        max-width: 35rem;
+        padding-left: 8rem;
+    }
+
+    img {
+        height: 20rem;
+        width: auto;
+    }
+}
+
+#mitteilung {
+    height: 65rem;
+
+    .error-message {
+        color: $red;
+    }
+
+    .send-message {
+        color: $dark_blue;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-family: 'Looking Flowers', sans-serif;
+        color: white;
+    }
+
+    form {
+        input, textarea {
+            width: 35rem;
+            border: none;
+            background: transparent;
+            font-family: 'mr-eaves-modern', sans-serif;
+            text-align: center;
+            color: white;
+            font-size: 1.25rem;
+            outline: none;
+            border-bottom: white 1px solid;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        // Anrede
+        .anreden {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            .anrede-container {
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 0;
+                padding-right: 1rem;
+                color: white;
+                font-size: 1.25rem;
+
+                input {
+                    cursor: pointer;
+                    height: 1rem;
+                    width: auto;
+                }
+            }
+
+            .anrede-container:last-of-type {
+                padding-right: 0;
+            }
+        }
+
+        // Dropdown
+        .dropdown {
+            font-size: 1.25rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        #dropdown {
+            width: 17rem;
+            height: 3rem;
+            background: transparent;
+            border: white 1px solid;
+            border-radius: 1rem;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem 0 1rem;
+
+            option {
+                padding: 0 0 0 0 !important;
+            }
+        }
+
+        // Nachricht
+        textarea {
+            border: 1px solid white;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem 1rem 0 1rem;
+        }
+
+        // Datenschutz- & Nutzungsbedingungen
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            font-size: 1.25rem;
+            color: white;
+
+            #checkbox {
+                height: 1.5em;
+                width: 1.5rem;
+                margin: 0;
+            }
+
+            #agree {
+
+                margin: 0;
+            }
+
+            label {
+                margin-left: 1rem;
+            }
+        }
+        
+        // Fehlermeldungen
+        span {
+            color: $red;
+            padding: 1rem 0 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        span:last-of-type {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablets) {
+    .person {
+        flex-direction: column;
+
+        p {
+            padding: 2rem 0 0 0;
+            max-width: 85rem;
+        }
+    }
+
+    #mitteilung {
+        height: 70rem;
+
+        form {
+            .checkbox-container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                #agree {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    #mitteilung {
+        form {
+            input, textarea {
+                width: 18rem;
+            }
+
+            .anreden {
+                .anrede-container {    
+                    input {
+                        height: 1.15rem;
+                        width: 1.15rem;
+                    }
+                }
+            }
+
+            .checkbox-container {
+    
+                #agree {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+        }
+    }
+}
