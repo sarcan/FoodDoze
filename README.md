@@ -1,5 +1,5 @@
 # Custom CMS 🍴 Food Doze 
-Food Doze ist ein persönlicher Foodblog. Administratoren können sich einloggen, Nutzer verwalten und neue Rezepte erstellen.
+Bei Food Doze handelt es sich um ein persönliches Projekt. Genauer gesagt handelt es sich um einen Foodblog für die Verwaltung eigener Rezepte. Administratoren können sich einloggen, Nutzer verwalten und neue Rezepte erstellen.
 
 ### 🗃️ Datenbank 
 Die Zugangsdaten zur SQL Datenbank sind unter `admin/includes/config.php` abgelegt.
